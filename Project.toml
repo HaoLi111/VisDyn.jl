@@ -1,0 +1,13 @@
+name = "VisDyn"
+uuid = "1588bc1c-8056-4c32-acf5-4774f276c6a0"
+authors = ["Hao Li"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
