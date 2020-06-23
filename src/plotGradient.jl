@@ -93,7 +93,7 @@ end
 
 
 "plotNullCline(fx,fy)"
-function    plotNullCline!(p,fx::Function,fy::Function,xbase,ybase;tol = 1e-3)
+function plotNullCline!(p,fx::Function,fy::Function,xbase,ybase;tol = 1e-3)
     p=contour!(p,xbase,ybase,[fx(xi,yi) for yi in ybase, xi in xbase],levels = [-tol,tol],color = :red,alpha = .3)#,key = "x NullCline est")
     p=contour!(p,xbase,ybase,[fy(xi,yi) for yi in ybase, xi in xbase],levels = [-tol,tol],color =:blue ,alpha = .3)#,key = "y NullCline est")
     return p

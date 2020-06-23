@@ -1,3 +1,7 @@
+using Plots
+using FFMPEG
+
+
 module VisDyn
 
 include("colorMap.jl")
@@ -7,5 +11,4 @@ include("plotGradient.jl")
 export plotVF!, plotNullCline!, plotGradient!, plotValongCycle!, circularCycle
 
 # Write your package code here.
-
 end

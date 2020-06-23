@@ -1,5 +1,6 @@
 #cgrad(:default)[1]
-"cMap(x::Float,cSeq::Array) Map a value from 0 to one to a color, given a color sequence"
+
+```
 function cMap(x::Number,cSeq::Array)
     n = length(cSeq)
     if x>1 || x<0
@@ -11,8 +12,9 @@ function cMap(x::Number,cSeq::Array)
     end
     cSeq[ind]
 end
-
-function cMap(x::Number,cSeq::ColorGradient)
+```
+"cMap(x::Float,cSeq::Array) Map a value from 0 to one to a color, given a color sequence"
+function cMap(x::Number,cSeq)
     cMap(x,cSeq.colors)
 end
 
